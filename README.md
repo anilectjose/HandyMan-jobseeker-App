@@ -1,0 +1,2 @@
+# HandyMan-jobseeker-App
+This is an Android Application. This system is to help the workers of the unorganized sector for searching jobs and customers for searching workers easily. Using this system, the job seekers can easily register with their personal and job-related information. Intermediators (brokers) can be avoided between customers and workers.. Here we have 2 modules- Workers and Customers.
