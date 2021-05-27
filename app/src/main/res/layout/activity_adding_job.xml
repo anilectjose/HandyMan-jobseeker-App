@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@drawable/aaa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".adding_job">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/REG"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:fontFamily="@font/audiowide"
+                android:gravity="center"
+                android:text="Add your works"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/jobname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Job name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/joblocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Job location"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/jobdescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Job Description"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:inputType="textMultiLine"
+                    android:maxLength="500"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/jobduedate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Due date"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/Addjob_button"
+                android:layout_width="218dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="#000000"
+                android:fontFamily="@font/aldrich"
+                android:text="Add job"
+                android:textColor="#fff"
+                />
+
+            <TextView
+                android:id="@+id/exi_works"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="Your current works"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </ScrollView>

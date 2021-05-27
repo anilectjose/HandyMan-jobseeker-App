@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/service_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="times"
+        android:text="id"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/sname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="times"
+        android:text="S Name"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/sdue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Due"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tags"
+        android:visibility="gone" />
+
+</LinearLayout>

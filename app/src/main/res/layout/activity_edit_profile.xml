@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/aaa"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".edit_profile">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/inputQual"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/round_border"
+            android:drawableLeft="@drawable/ic_qual"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:hint="Qualification"
+            android:inputType="text"
+            android:padding="16dp"
+            android:transitionName="usrn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/topText2" />
+
+        <EditText
+            android:id="@+id/inputSpec"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/round_border"
+            android:drawableLeft="@drawable/ic_name"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:hint="Specilization"
+            android:inputType="text"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputQual" />
+
+
+        <EditText
+            android:id="@+id/inputLink"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/round_border"
+            android:drawableLeft="@drawable/ic_link"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:hint="Link (Optional)"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:transitionName="usrn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputSpec" />
+        <EditText
+            android:id="@+id/inputPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/round_border"
+            android:drawableLeft="@drawable/ic_money"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:hint="Cost/Hr"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:transitionName="usrn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLink" />
+        <TextView
+            android:id="@+id/topText2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="48dp"
+            android:text="Add more about you..."
+            android:textColor="?attr/colorPrimary"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:transitionName="title"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/inputQual"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnUpdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/round_bg"
+            android:text="Update"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:transitionName="bttn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputPrice" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

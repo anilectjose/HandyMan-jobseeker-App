@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/splashbg"
+    tools:context=".splash_screen">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="240dp"
+        android:fontFamily="@font/finger_paint"
+        android:gravity="center"
+        android:text="HandyMan"
+        android:textColor="#9C27B0"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Job Seeker"
+        android:textColor="#E91E63"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="150dp"/>
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/image_delivery_man"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:src="@drawable/splash"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Work done in a single click"
+        android:textColor="#FF3700B3"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="260dp"/>
+
+</FrameLayout>

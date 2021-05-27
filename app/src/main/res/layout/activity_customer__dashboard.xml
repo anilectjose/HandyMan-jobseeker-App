@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/aaa"
+    android:layout_height="match_parent"
+    tools:context=".Customer_Dashboard">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/handymanlogo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aldrich"
+                    android:text="Handy Man"
+                    android:textColor="#ffff"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="210dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/profile"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/work" />
+
+                            <TextView
+                                android:id="@+id/txtprofile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/profile"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:text="Add works"
+                                android:textColor="#000"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/btnaddworks"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/rute"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/profile" />
+
+                            <TextView
+                                android:id="@+id/txtrute"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/rute"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:text="Profile"
+                                android:textColor="#000"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/btnprofile"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/history"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/recent" />
+
+                            <TextView
+                                android:id="@+id/txthistory"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/history"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:text="Recent works"
+                                android:textColor="#000"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/btnhistory"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/feedback"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/chat" />
+
+                            <TextView
+                                android:id="@+id/txtfeedback"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/feedback"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:text="Chat"
+                                android:textColor="#000"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/btnchat"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/setting"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/addmembers" />
+
+                            <TextView
+                                android:id="@+id/txtsetting"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/setting"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:text="Approve"
+                                android:textColor="#000"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/btnsetting"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/support"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/complaint" />
+
+                            <TextView
+                                android:id="@+id/txtsupport"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/support"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:text="Complaint"
+                                android:textColor="#000"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/btncmplt"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

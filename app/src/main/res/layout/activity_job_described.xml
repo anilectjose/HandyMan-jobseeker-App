@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aaa"
+    tools:context=".job_described">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/service_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="times"
+            android:text="id"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/sname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="times"
+            android:gravity="center"
+            android:text="S Name"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/stype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Location"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Date :"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/servie_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="1000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Due :"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/work_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:text="555"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/descriptio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="times"
+                android:text="Desc"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/workind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="24dp"
+                android:text="Check here if you don't need co-worker"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accept Job"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
